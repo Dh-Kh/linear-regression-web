@@ -1,7 +1,7 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
-dataframe = pd.read_csv(r"C:\Users\Admin\Downloads\archive\Salary_dataset.csv")
+dataframe = pd.read_csv("Salary_dataset.csv")
 dataframe = dataframe.drop("Unnamed: 0" , axis=1)
 x = dataframe["YearsExperience"].values.reshape(-1, 1)
 y = dataframe["Salary"].values.reshape(-1, 1)
